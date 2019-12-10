@@ -9,11 +9,11 @@
 import grpc
 from concurrent import futures
 import time
-from .store_packages import store_pb2
-from .store_packages import store_pb2_grpc
-from data_store import store
-from data_store.configuration import data_store_address
-from data_store.dependency_manager import Dependencies
+import store_pb2
+import store_pb2_grpc
+import store
+from configuration import data_store_address
+from dependency_manager import Dependencies
 stub = None
 
 log = Dependencies.log()
@@ -25,21 +25,6 @@ class KeyValueService(store_pb2_grpc.GetSetServicer):
         response.data = store.operation(request.operation , request.stage)
         return response
  
- 
-def connect_datastore():
-    global stub
-    channel = grpc.insecure_channel(f'127.0.0.1:{data_store_address["port"]}')
-    stub =  store_pb2_grpc.GetSetStub(channel)
-    log.write('Client channel established with the store', 'info')
-    
-def command_to_store(value, stage):
-    log.write('Making RPC call to store')
-    global stub
-    request = store_pb2.Request()
-    request.operation = value
-    request.stage = stage 
-    response = stub.operation(request)
-    return response.data
 
 def init_data_store(cluster_id = 0):
     

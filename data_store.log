@@ -1,0 +1,502 @@
+2019-12-09 16:39:35,066 - root - CRITICAL - Failed to start the data store
+2019-12-09 16:39:59,580 - root - CRITICAL - Failed to start the data store
+2019-12-09 16:57:33,613 - root - CRITICAL - Failed to start the data store
+2019-12-09 17:02:06,822 - grpc._server - ERROR - Exception calling application: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 32, in operation
+    operation, key = first.split()
+ValueError: not enough values to unpack (expected 2, got 1)
+2019-12-09 17:05:05,017 - grpc._server - ERROR - Exception calling application: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 32, in operation
+    operation, key = first.split()
+ValueError: not enough values to unpack (expected 2, got 1)
+2019-12-09 17:05:17,139 - grpc._server - ERROR - Exception calling application: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 32, in operation
+    operation, key = first.split()
+ValueError: not enough values to unpack (expected 2, got 1)
+2019-12-09 17:05:46,116 - grpc._server - ERROR - Exception calling application: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 26, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 32, in operation
+    operation, key = first.split()
+ValueError: not enough values to unpack (expected 2, got 1)
+2019-12-09 17:06:12,305 - grpc._server - ERROR - Exception calling application: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 26, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 33, in operation
+    operation, key = first.split()
+ValueError: not enough values to unpack (expected 2, got 1)
+2019-12-09 17:09:26,909 - root - WARNING - Sucessfully Store data with key:name
+
+2019-12-09 17:14:09,485 - root - WARNING - Sucessfully Store data with key:name
+
+2019-12-09 17:20:24,810 - root - WARNING - Sucessfully Store data with key:name
+
+2019-12-09 17:28:54,147 - root - WARNING - Sucessfully Store data with key:0:mapper_input:word_count
+
+2019-12-09 17:28:54,163 - root - WARNING - Sucessfully Store data with key:0:mapper_input:word_count
+
+2019-12-09 17:28:54,166 - root - WARNING - Sucessfully Store data with key:0:mapper_input:word_count
+
+2019-12-09 17:28:54,168 - root - WARNING - Sucessfully Store data with key:0:mapper_input:word_count
+
+2019-12-09 17:28:54,179 - root - WARNING - Sucessfully Store data with key:0:mapper_input:word_count
+
+2019-12-09 17:36:23,606 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:36:23,615 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:36:23,618 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:36:23,628 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:36:23,632 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:42:37,020 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:42:37,029 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:42:37,032 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:42:37,035 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:42:37,043 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:42:37,045 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 26, in operation
+    return response
+  File "G:\Git\key-value\store.py", line 34, in operation
+    return '0'
+  File "G:\Git\key-value\database.py", line 81, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:43:59,048 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:43:59,056 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:43:59,058 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:43:59,060 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:43:59,063 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:43:59,064 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 32, in operation
+    value, size = db.get_value(key, stage)
+  File "G:\Git\key-value\database.py", line 81, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:45:44,964 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:45:44,972 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:45:44,974 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:45:44,976 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:45:44,979 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:45:44,980 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 32, in operation
+    operation, key = first.split()
+  File "G:\Git\key-value\database.py", line 81, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:46:05,310 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:46:05,317 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:46:05,319 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:46:05,328 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:46:05,330 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:46:05,331 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 32, in operation
+    operation, key = first.split()
+  File "G:\Git\key-value\database.py", line 81, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:46:07,207 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:46:07,215 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:46:07,217 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:46:07,219 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:46:07,222 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:46:07,229 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 32, in operation
+    operation, key = first.split()
+  File "G:\Git\key-value\database.py", line 81, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:47:29,634 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:47:29,636 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:47:29,638 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:47:29,640 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:47:29,651 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:47:29,654 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 32, in operation
+    operation, key = first.split()
+  File "G:\Git\key-value\database.py", line 81, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:48:10,305 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:48:10,314 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:48:10,317 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:48:10,319 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:48:10,321 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:48:10,321 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    print('here2')
+  File "G:\Git\key-value\store.py", line 32, in operation
+    operation, key = first.split()
+  File "G:\Git\key-value\database.py", line 81, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:49:47,404 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:49:47,416 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:49:47,422 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:49:47,433 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:49:47,440 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:49:47,455 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 27, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 33, in operation
+    value, size = db.get_value(key, stage)
+  File "G:\Git\key-value\database.py", line 81, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:50:21,762 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:50:21,768 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:50:21,776 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:50:21,781 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:50:21,784 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:50:21,791 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 27, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 32, in operation
+    value, size = db.get_value(key, stage)
+  File "G:\Git\key-value\database.py", line 81, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:50:32,465 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:50:32,472 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:50:32,475 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:50:32,476 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:50:32,478 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:50:32,491 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 32, in operation
+    value, size = db.get_value(key, stage)
+  File "G:\Git\key-value\database.py", line 81, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:50:51,816 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:50:51,824 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:50:51,826 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:50:51,835 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:50:51,841 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:50:51,843 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 33, in operation
+    value, size = db.get_value(key, stage)
+  File "G:\Git\key-value\database.py", line 81, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:51:31,771 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:51:31,778 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:51:31,790 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:51:31,792 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:51:31,794 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:51:31,806 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 34, in operation
+    value, size = db.get_value(key, stage)
+  File "G:\Git\key-value\database.py", line 81, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:53:16,393 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:53:16,401 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:53:16,411 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:53:16,413 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:53:16,414 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:53:16,415 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 34, in operation
+    value, size = db.get_value(key, stage)
+  File "G:\Git\key-value\database.py", line 81, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:53:57,525 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:53:57,533 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:53:57,544 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:53:57,546 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:53:57,549 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:53:57,549 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 34, in operation
+    value, size = db.get_value(key, stage)
+  File "G:\Git\key-value\database.py", line 81, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:55:12,824 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:55:12,832 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:55:12,841 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:55:12,843 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:55:12,845 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:55:12,859 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 34, in operation
+    value, size = db.get_value(key, stage)
+  File "G:\Git\key-value\database.py", line 81, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:55:32,764 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:55:32,778 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:55:32,786 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:55:32,804 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:55:32,812 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:55:32,814 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 34, in operation
+    value, size = db.get_value(key, stage)
+  File "G:\Git\key-value\database.py", line 81, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:56:28,699 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:56:28,708 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:56:28,716 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:56:28,723 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:56:28,724 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:56:28,726 - grpc._server - ERROR - Exception calling application: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 34, in operation
+    value, size = db.get_value(key, stage)
+  File "G:\Git\key-value\database.py", line 82, in get_value
+    with open(path) as f:
+TypeError: expected str, bytes or os.PathLike object, not _io.TextIOWrapper
+2019-12-09 17:56:58,006 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:56:58,014 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:56:58,016 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:56:58,025 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:56:58,030 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:56:58,032 - grpc._server - ERROR - Exception calling application: 'Database' object has no attribute 'initial_file_path'
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 34, in operation
+    value, size = db.get_value(key, stage)
+  File "G:\Git\key-value\database.py", line 75, in get_value
+    path = self.initial_file_path
+AttributeError: 'Database' object has no attribute 'initial_file_path'
+2019-12-09 17:57:59,491 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 17:57:59,499 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 17:57:59,501 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 17:57:59,503 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 17:57:59,516 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 17:57:59,527 - grpc._server - ERROR - Exception calling application: 'size'
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 34, in operation
+    value, size = db.get_value(key, stage)
+  File "G:\Git\key-value\database.py", line 88, in get_value
+    return row['value'], row['size']
+KeyError: 'size'
+2019-12-09 18:01:32,081 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 18:01:32,091 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 18:01:32,093 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 18:01:32,095 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 18:01:32,097 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+
+2019-12-09 18:01:32,106 - grpc._server - ERROR - Exception calling application: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "C:\Users\gurjaspal\Anaconda3\lib\site-packages\grpc\_server.py", line 435, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server.py", line 25, in operation
+    response.data = store.operation(request.operation , request.stage)
+  File "G:\Git\key-value\store.py", line 34, in operation
+    value, size = db.get_value(key, stage)
+ValueError: too many values to unpack (expected 2)
+2019-12-09 18:02:26,007 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:0
+
+2019-12-09 18:02:26,009 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:1
+
+2019-12-09 18:02:26,018 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:2
+
+2019-12-09 18:02:26,020 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:3
+
+2019-12-09 18:02:26,022 - root - WARNING - Sucessfully Store data with key:0:mapper:word_count:4
+

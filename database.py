@@ -11,8 +11,8 @@ Created on Sat Sep 28 13:19:41 2019
 #https://realpython.com/read-write-files-python/
 #https://realpython.com/python-sockets/
 import csv
-from data_store.configuration import initial_data_path, intermediate_data_path, final_data_path
-from data_store.rpc_constants import INITIAL_STAGE, INTERMEDIATE_STAGE, FINAL_STAGE
+from configuration import initial_data_path, intermediate_data_path, final_data_path
+from rpc_constants import INITIAL_STAGE, INTERMEDIATE_STAGE, FINAL_STAGE
 
 
 class Database:
@@ -69,10 +69,9 @@ class Database:
         
         
     def get_value(self, key , stage):
-        
         path = ""
         if stage == INITIAL_STAGE:
-            path = self.initial_file
+            path = self.initial_db_path
         elif stage == INTERMEDIATE_STAGE:
             path = self.intermediate_data_path
         elif stage == FINAL_STAGE:
@@ -82,7 +81,7 @@ class Database:
             reader = csv.DictReader(f)
             for row in reversed(list(reader)):
                 if row['key'] == key:
-                    return row['value'], row['size']
+                    return row['value']
         return None, None
     
     

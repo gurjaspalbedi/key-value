@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from data_store import rpc_constants
-from data_store.database import Database
-from data_store.dependency_manager import Dependencies
+import rpc_constants
+from database import Database
+from dependency_manager import Dependencies
 
 log = Dependencies.log()
 db = Database()
@@ -18,7 +18,6 @@ def store_data(key, value, stage):
             return '-1'
 
 def operation(command_line, stage):
-    operation = "none"
     first = command_line
     value = ""
     command = 'set' if first.startswith('set') else 'get'
@@ -29,10 +28,12 @@ def operation(command_line, stage):
             return store_data(key, value, stage)
         
         elif command == rpc_constants.GET_COMMAND:
+           
             operation, key = first.split()
-            value, size = db.get_value(key, stage)
+            print(operation , key)
+            value = db.get_value(key, stage)
             if value:
-                return '0'
+                return value
             else:
                 log.write("KEY NOT FOUND\r\n", 'critical')
                 return '-2'
