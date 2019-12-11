@@ -28,6 +28,7 @@ class KeyValueService(store_pb2_grpc.GetSetServicer):
 
 def init_data_store(cluster_id = 0):
     
+    time.sleep(20)
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=1))
     store_pb2_grpc.add_GetSetServicer_to_server(
             KeyValueService(), server)
