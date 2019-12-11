@@ -18,12 +18,12 @@ from rpc_constants import INITIAL_STAGE, INTERMEDIATE_STAGE, FINAL_STAGE
 class Database:
     
     def __init__(self):
-        self.initial_db_path = initial_data_path
+        self.initial_data_path = initial_data_path
         self.intermediate_data_path = intermediate_data_path
         self.final_data_path = final_data_path
         
 #        Start with empty file if the Database is reinitialized
-        with open(self.initial_db_path, "w+"):
+        with open(self.initial_data_path, "w+"):
             pass
         
         with open(self.intermediate_data_path, "w+"):
@@ -32,23 +32,23 @@ class Database:
         with open(self.final_data_path, "w+"):
             pass        
         
-        self.initial_file = open(self.initial_db_path, "r+")
-        self.intermediate_data_path = open(self.intermediate_data_path, "r+")
-        self.final_data_path = open(self.final_data_path, "r+")
+        self.initial_file = open(self.initial_data_path, "r+")
+        self.intermediate_file = open(self.intermediate_data_path, "r+")
+        self.final_file = open(self.final_data_path, "r+")
         fieldnames = ['key', 'value']
 
         self.writer_initial_data = csv.DictWriter(self.initial_file, fieldnames=fieldnames)
         self.writer_initial_data.writeheader()
         
-        self.writer_intermediate_data = csv.DictWriter(self.intermediate_data_path, fieldnames=fieldnames)
+        self.writer_intermediate_data = csv.DictWriter(self.intermediate_file, fieldnames=fieldnames)
         self.writer_intermediate_data.writeheader()
         
-        self.writer_final_data = csv.DictWriter(self.final_data_path, fieldnames=fieldnames)
+        self.writer_final_data = csv.DictWriter(self.final_file, fieldnames=fieldnames)
         self.writer_final_data.writeheader()
         
         self.reader_initial = csv.DictReader(self.initial_file)
-        self.reader_intermediate = csv.DictReader(self.intermediate_data_path)
-        self.reader_final = csv.DictReader(self.final_data_path)
+        self.reader_intermediate = csv.DictReader(self.intermediate_file)
+        self.reader_final = csv.DictReader(self.final_file)
             
     def set_value(self, key, value, data_stage):  
         
@@ -60,18 +60,17 @@ class Database:
         elif data_stage == INTERMEDIATE_STAGE:
             
             self.writer_intermediate_data.writerow({'key':key, 'value': value})
-            self.intermediate_data_path.flush()
+            self.intermediate_file.flush()
             
         elif data_stage == FINAL_STAGE:
             
             self.writer_final_data.writerow({'key':key, 'value': value})
-            self.final_data_path.flush()
-        
+            self.final_file.flush()
         
     def get_value(self, key , stage):
         path = ""
         if stage == INITIAL_STAGE:
-            path = self.initial_db_path
+            path = self.initial_data_path
         elif stage == INTERMEDIATE_STAGE:
             path = self.intermediate_data_path
         elif stage == FINAL_STAGE:
